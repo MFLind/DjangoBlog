@@ -29,7 +29,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
+X_FRAME_OPTIONS = 'SAMRORIGIN'
 
 ALLOWED_HOSTS = ['django-blog-5.herokuapp.com', 'localhost']
 
